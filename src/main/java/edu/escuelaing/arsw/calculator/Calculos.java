@@ -15,7 +15,7 @@ public class Calculos {
         for (int i = 0; i < ln.getSize(); i++) {
             suma += ln.get(i).getData();
         }
-        return suma/ln.getSize();
+        return (double) Math.round((suma/ln.getSize()) * 100) / 100;
     }
 
     public Double calcularDesviacion(linkedlist ln) {
