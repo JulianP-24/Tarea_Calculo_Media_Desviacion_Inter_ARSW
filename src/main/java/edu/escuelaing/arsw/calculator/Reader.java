@@ -2,8 +2,9 @@ package edu.escuelaing.arsw.calculator;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.LinkedList;
-import java.util.List;
+
+import edu.escuelaing.arsw.LinkedList.linkedlist;
+
 import java.io.BufferedReader;
 
 public class Reader {
@@ -12,12 +13,12 @@ public class Reader {
     Double desviacion;
 
     public void readFile(FileReader file) throws IOException {
-        List ln = new LinkedList<>();
+        linkedlist ln = new linkedlist();
         String listaNumeros = null;
         BufferedReader bf = new BufferedReader(file);
         while ((listaNumeros = bf.readLine()) != null) {
             Double element = Double.parseDouble(listaNumeros);
-            ln.add(element);
+            ln.agregar(element);
 
         }
         System.out.println(ln);

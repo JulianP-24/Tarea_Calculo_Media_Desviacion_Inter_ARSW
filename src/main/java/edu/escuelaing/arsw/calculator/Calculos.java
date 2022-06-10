@@ -1,34 +1,33 @@
 package edu.escuelaing.arsw.calculator;
 
-
-import java.util.List;
+import edu.escuelaing.arsw.LinkedList.linkedlist;
 
 public class Calculos {
 
-    public Double calcularMedia(List <Double> ln) {
-        if (ln.size() <= 0) {
+    public Double calcularMedia(linkedlist ln) {
+        if (ln.getSize() <= 0) {
             return 0.0;
         }
 
         double suma = 0;
-        for (int i = 0; i < ln.size(); i++) {
-            suma +=  ln.get(i);
+        for (int i = 0; i < ln.getSize(); i++) {
+            suma +=  ln.get(i).getData();
         }
-        return suma/ln.size();
+        return suma/ln.getSize();
     }
 
-    public Double calcularDesviacion(List <Double> ln) {
-        if (ln.size() < 2) {
+    public Double calcularDesviacion(linkedlist ln) {
+        if (ln.getSize() < 2) {
             return 0.0;
         }
 
         double value = 0.0;
         double media = calcularMedia(ln);
 
-        for (int i = 0; i < ln.size(); i++) {
-            value += Math.pow((ln.get(i) - media), 2);
+        for (int i = 0; i < ln.getSize(); i++) {
+            value += Math.pow((ln.get(i).getData() - media), 2);
         }
-        double desviacionEstandar = Math.sqrt(value / (ln.size() - 1));
+        double desviacionEstandar = Math.sqrt(value / (ln.getSize() - 1));
         return (double) Math.round(desviacionEstandar * 100) / 100;
     }
 }
