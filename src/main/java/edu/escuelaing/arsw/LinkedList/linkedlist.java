@@ -16,7 +16,7 @@ public class linkedlist {
             }
 
             actual.next = new Node(elemento);
-            actual.next.next = actual;
+            actual.next.head = actual;
         } else {
             head = new Node(elemento);
             head.head = null;
@@ -54,4 +54,5 @@ public class linkedlist {
     public int getSize() {
         return size;
     }
+
 }

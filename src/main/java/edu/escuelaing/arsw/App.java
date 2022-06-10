@@ -16,7 +16,7 @@ public class App
         FileReader fr = new FileReader(args[0]);
         Reader reader = new Reader();
         reader.readFile(fr);
-        System.out.println(reader.getMedia());
-        System.out.println(reader.getDesviacionEstandar());
+        System.out.println("La media es: " + reader.getMedia());
+        System.out.println("La desviacion estandar es: " + reader.getDesviacionEstandar());
     }
 }

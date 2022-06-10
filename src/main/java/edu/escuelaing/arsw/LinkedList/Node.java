@@ -9,7 +9,7 @@ public class Node {
         this.data = data;
     }
 
-    public void agregar(double data) {
+    public void agrega(int data) {
         Node actual = this;
         while (actual.next != null) {
             actual = actual.next;
@@ -20,9 +20,7 @@ public class Node {
     public double getData() {
         return data;
     }
-    
-    public Node getNext() {
-        return next;
-    }
+
 }
+
 

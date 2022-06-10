@@ -1,5 +1,7 @@
 package edu.escuelaing.arsw.calculator;
 
+import java.util.List;
+
 import edu.escuelaing.arsw.LinkedList.linkedlist;
 
 public class Calculos {
@@ -11,7 +13,7 @@ public class Calculos {
 
         double suma = 0;
         for (int i = 0; i < ln.getSize(); i++) {
-            suma +=  ln.get(i).getData();
+            suma += ln.get(i).getData();
         }
         return suma/ln.getSize();
     }

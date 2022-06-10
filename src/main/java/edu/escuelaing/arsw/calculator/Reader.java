@@ -2,6 +2,7 @@ package edu.escuelaing.arsw.calculator;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.LinkedList;
 
 import edu.escuelaing.arsw.LinkedList.linkedlist;
 
@@ -14,14 +15,14 @@ public class Reader {
 
     public void readFile(FileReader file) throws IOException {
         linkedlist ln = new linkedlist();
-        String listaNumeros = null;
+        String listaNumeros;
         BufferedReader bf = new BufferedReader(file);
         while ((listaNumeros = bf.readLine()) != null) {
             Double element = Double.parseDouble(listaNumeros);
             ln.agregar(element);
-
+            System.out.println(element);
         }
-        System.out.println(ln);
+        
 
         Calculos calculos = new Calculos();
         media = calculos.calcularMedia(ln);
