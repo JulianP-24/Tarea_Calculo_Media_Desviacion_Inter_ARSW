@@ -24,7 +24,7 @@ Una vez clonado para empezar a ejecutarlo ponga el siguiente comando
     mvn package
 ```
 
-Despues puede correrlo con el siguiente comando, ubicandose en la carpeta raiz, en este caso se escoge el tipo loc para contar las lineas del archivo prueba1
+Despues puede correrlo con el siguiente comando, ubicandose en la carpeta raiz, en este caso se lee del archivo con nombre numeros.txt
 
 ```
     java -cp "./target/classes/" edu.escuelaing.arsw.App numeros.txt
@@ -34,7 +34,7 @@ Despues puede correrlo con el siguiente comando, ubicandose en la carpeta raiz, 
 Otra forma pra correrlo, ya generado el JAR, es con el siguiente comando
 
 ```
-    java -cp "target/psp0-1.0-SNAPSHOT.jar" edu.escuelaing.arsw.App numeros.txt
+    java -cp "target/CalculoMediaDesviacion-1.0-SNAPSHOT.jar" edu.escuelaing.arsw.App numeros.txt
 ```
 ![](img/img2.png)
 
