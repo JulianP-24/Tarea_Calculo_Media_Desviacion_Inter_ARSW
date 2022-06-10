@@ -20,7 +20,6 @@ public class Reader {
         while ((listaNumeros = bf.readLine()) != null) {
             Double element = Double.parseDouble(listaNumeros);
             ln.agregar(element);
-            System.out.println(element);
         }
         
 
