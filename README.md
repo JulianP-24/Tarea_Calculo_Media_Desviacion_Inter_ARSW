@@ -43,6 +43,8 @@ A continuacion se muestra el diagrama de clases correspondiente con la aplicacio
 
 ![](img/diagramaClases.png)
 
-En el diagrama se observa dos clases, una es la clase principal que tiene el metodo main, el cual es para correr la aplicacion. En este metodo se hace un llamado a la otra clase llamada lineCounter, en donde con el archivo y el tipo, que se escribieron en consola y que le llegaron como parametros en el metodo readFile, se hace una validadcion y dependiendo de eso se cuentan las lineas correspondientes a traves del metodo count de esa misma clase.
+En el diagrama de clases se obseravn5 clases, distribuidas en dos paquetes respectivamente, los paquetes tienen como nombre calculator, que es en donde se lee el archivo y se realizan los calculos correspondientes, dentro de este paquete, hay dos clases las cuales son: la clase reader que tiene el metodo para leer el archivo y la clase calculos que tiene los metodos para calcular la media y la desviacion estandar.
 
-Para retornar el resultado y mostrarlo en pantalla, hay un metodo en la clase lineCounter que retorna la variable con el numero de lineas. En la Clase main se llama a traves de un print en consola, el metodo correspondiente de la otra clase llamado getNumLineas.
+El otro paquete se llama LinkedList que es en donde se hace la implementacion de la estructura de datos. Dentro se tienen dos clases: una es la clase Node, en donde se crean los nodos de la linkedlist respectivamente y la otra clase se llama linkedlist que es ya como tal donde se crea la lista, utilizando los nodos y los datos leidos del archivo, haciendo uso de los metodos respectivos.
+
+La clase principal App en el metodo main llama a la clase reades para leer el archivo, esa clase reader llama a calculos para realizar las operaciones e igualmente hace uso de la clase linkedlist para la implementacio que esta a su vez hace uso de la clase Node.
